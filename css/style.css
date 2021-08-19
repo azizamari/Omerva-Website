@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+header li, header a, header button, .side p, .side{
+    font-family: 'Lato', sans-serif;
+    color:#000;
+    text-decoration: none;
+}
+header{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:30px 0;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+    width:150px;
+    height:auto;
+}
+.hamburger{
+    width:60px;
+    height: auto;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display:inline-block;
+    padding:8px 15px;
+}
+.nav_links li a, .fa-shopping-cart, .name{
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color:#FF0F33;
+}
+/* 
+.side-nav{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,0.03);
+    backdrop-filter: blur(16px);
+    overflow-x:hidden;
+    padding-top:60px;
+    border-top-right-radius: 18px;
+    transition: all 0.5s ease 0s;
+}
+
+.side-nav a{
+    font-size: 1.2rem;
+    padding:20px 10px 10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.side-nav a:hover{
+    color:#EF5477;
+}
+
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left: 50px;
+} */
