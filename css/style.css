@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 *{
     padding: 0;
@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 33px;
+    font-size: 36px;
     font-family: 'Open Sans', sans-serif;
 }
 header{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
     position: absolute;
     width: 100%;
@@ -37,6 +37,7 @@ nav{
     height: auto;
 }
 .nav_links{
+    font-weight:600;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@ nav{
     justify-content: center;
     align-items:center;
 }
-.nav_links li a, .fa-shopping-cart, .name{
+.nav_links li a{
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease 0s;
