@@ -100,3 +100,18 @@ nav{
     font-size:36px;
     margin-left: 50px;
 } */
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:70%;
+}
