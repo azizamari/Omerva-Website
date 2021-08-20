@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 36px;
     font-family: 'Open Sans', sans-serif;
 }
 header{
@@ -49,7 +48,7 @@ nav{
     align-items:center;
 }
 .nav_links li a{
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -61,10 +60,18 @@ nav{
     outline:none;
     border:none;
     width:100px;
-    height:40px;
-    border-radius:30px;
     background:#FF0F33;
     cursor: pointer;
+    padding: 10px;
+    border-radius:50px;
+    transition: all 0.5s ease 0s;
+    font-size: 18px;
+}
+.sign:hover{
+    background-color:transparent;
+    color: #FF0F33;
+    border: 3px solid #FF0F33;
+    border-radius:0px;
 }
 /* 
 .side-nav{
