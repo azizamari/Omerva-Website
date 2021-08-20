@@ -114,6 +114,8 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .hero > img{
     display: block;
@@ -122,4 +124,18 @@ nav{
     margin-top: auto;
     margin-bottom: auto;
     width:70%;
+}
+
+
+.about{
+    height: 100vh;
+    background:#FAFAFA;
+}
+.section__title{
+    text-align: center;
+    font-size:30px;
+    letter-spacing:1.5px;
+    font-weight:700;
+    text-decoration: underline #FF0F33 6px;
+    text-underline-offset:7px;
 }
