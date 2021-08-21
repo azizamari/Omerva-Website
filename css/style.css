@@ -220,3 +220,80 @@ nav{
 #blog .more a span{
     vertical-align:middle;
 }
+
+#team{
+    height: 80vh;
+    background:#F3F3F3;
+}
+
+#team > h4{
+    text-align: center;
+    padding:2rem;
+    font-weight: 400;
+    color:#1D1929;
+    font-size:1.2rem;
+}
+.about_image {
+    height: auto;
+    width: 20rem;
+}
+.about_text{
+    width:550px;
+}
+.main_about {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about_text h5{
+    text-align:center;
+    color:#FF0F33;
+    font-size:25px;
+    text-transform:capitalize;
+    margin-bottom:25px;
+    letter-spacing:2px;
+}
+.about_text p{
+    text-align:center;
+    color:#1D1929;
+    font-size:18px;
+    letter-spacing:1px;
+    line-height:28px;
+    margin-bottom: 45px;
+}
+.about_contact{
+    text-align:center;
+    letter-spacing:5px;
+    font-size:30px;
+}
+.about_contact a{
+    text-decoration: none;
+    color:#FF0F33;
+}
+
+.about_text >p>a{
+    text-decoration: none;
+    color:#FF0F33;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about_text h5 {
+        font-size: 18px;
+    }
+
+    .about_text p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .about_image {
+        height: auto;
+        width: 14rem;
+    }
+}
