@@ -123,19 +123,36 @@ nav{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width:70%;
+    width:70vw;
+    padding-top: 30px;
 }
 
+.section__title{
+    text-align: center;
+    font-size:2.5rem;
+    letter-spacing:1.5px;
+    font-weight:700;
+    padding-top:2rem;
+    text-decoration: underline #FF0F33 6px;
+    text-underline-offset:7px;
+}
 
 .about{
     height: 80vh;
-    background:#FAFAFA;
+    background:#F3F3F3;
 }
-.section__title{
-    text-align: center;
-    font-size:30px;
-    letter-spacing:1.5px;
-    font-weight:700;
-    text-decoration: underline #FF0F33 6px;
-    text-underline-offset:7px;
+
+.about > .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
+.about > .content >img{
+    width:450px
+}
+.about > .content >p{
+    width:50%;
 }
