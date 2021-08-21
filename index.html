@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href ="assets/favicon2.ico" type = "image/x-icon">
     <title>Immerva</title>
@@ -16,12 +17,14 @@
             </a>
         </span> -->
         <nav>
-            <img src="assets/logo.png" class="logo" alt="immerva" />
+            <a href="#">
+                <img src="assets/logo.png" class="logo" alt="immerva" />
+            </a>
             <ul class="nav_links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Producs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="#about">Who We Are</a></li>
+                <li><a href="#">What We Build</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#">Our Team</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -35,26 +38,52 @@
             <a href="#">Support</a>
         </div> -->
     </header>
-    <section class="hero">
+    <section id="hero">
         <img src="assets/goggles.png" alt="">
     </section>
-    <section class="about">
+    <section id="about">
         <h2 class="section__title">About Us</h2>
         <div class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores, quo nisi iusto molestiae nulla accusantium quaerat minima consequuntur, officiis quibusdam nemo veritatis id? Similique ipsum cupiditate impedit repudiandae. Aliquid.</p>
             <img src="assets/3dcoor.png" alt="3d coordinates">
         </div>
     </section>
-    <section class="services">
+    <section id="products">
 
     </section>
-    <section class="blog">
-
+    <section id="blog">
+        <h2 class="section__title">Featured Posts</h2>
+        <div class="blog_cards">
+            <div class="blog_card">
+                <div class="image_container">
+                    <img class="blog_image" src="assets/spatial.jpg">
+                </div>
+                <h4>Here we write the title of the blog</h4>
+                <p>August 21, 2021</p>
+            </div>
+            <div class="blog_card">
+                <div class="image_container">
+                    <img class="blog_image" src="assets/spatial.jpg">
+                </div>
+                <h4>Here we write the title of the blog</h4>
+                <p>August 21, 2021</p>
+            </div>
+            <div class="blog_card">
+                <div class="image_container">
+                    <img class="blog_image" src="assets/spatial.jpg">
+                </div>
+                <h4>Here we write the title of the blog</h4>
+                <p>August 21, 2021</p>
+            </div>
+        </div>
+        <div class="more">
+            <a href="/#"><i class='bx bxs-right-arrow-circle'></i> <span>See More Posts</span></a>
+        </div>
     </section>
-    <section class="team">
+    <section id="team">
         
     </section>
-    <section class="contact">
+    <section id="contact">
 
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
