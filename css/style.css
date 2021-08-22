@@ -114,7 +114,7 @@ nav{
     margin-left: 50px;
 } */
 
-#hero{
+.hero{
     height: 80vh;
     width: 100%;
     display: flex;
@@ -122,7 +122,7 @@ nav{
     flex-direction: column;
     text-align: center;
 }
-#hero > img{
+.hero > img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -143,28 +143,28 @@ nav{
     color:#1D1929;
 }
 
-#about{
+.about{
     height: 80vh;
     background:#F3F3F3;
 }
 
-#about > .content{
+.about > .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     width: 90%;
 }
-#about > .content >img{
+.about > .content >img{
     width:25vw;
 }
-#about > .content >p{
+.about > .content >p{
     width:50%;
     color:#1D1929;
     text-align:center;
 }
 
-#blog{
+.blog{
     height: 80vh;
     background:#fff;
 }
@@ -203,30 +203,30 @@ nav{
     font-size:0.9rem;
     font-style: italic;
 }
-#blog .more{
+.blog .more{
     text-align:center;
     padding-top:3rem;
 }
-#blog .more a{
+.blog .more a{
     font-size:1.1rem;
     text-decoration: inherit;
     color:#1D1929;
     font-weight:400;
 }
-#blog .more a .bxs-right-arrow-circle{
+.blog .more a .bxs-right-arrow-circle{
     vertical-align:middle;
     font-size:2rem;
 }
-#blog .more a span{
+.blog .more a span{
     vertical-align:middle;
 }
 
-#team{
+.team{
     height: 80vh;
     background:#F3F3F3;
 }
 
-#team > h4{
+.team > h4{
     text-align: center;
     padding:2rem;
     font-weight: 400;
@@ -286,23 +286,23 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-#contact{
+.contact{
     height: 35vh;
     background:#1D1929;
 }
-#contact .contact_content > img{
+.contact .contact_content > img{
     width:10vw;
     height:auto
 }
 
-#contact .contact_content .accounts .bx{
+.contact .contact_content .accounts .bx{
     color:#fff;
     font-size:2rem;
 }
 
-#contact .contact_content .contact_text{
+.contact .contact_content .contact_text{
     color:#fff;
-    font-size:1rem;
+    font-size:1.2rem;
     letter-spacing:2px;
 }
 small{
@@ -310,13 +310,20 @@ small{
     background:#1D1929;
     display:block;
     text-align:center;
-    font-size:1rem;
+    font-size:1.2rem;
     padding:1rem;
 }
 small a{
     color:#FF0F33;
     text-decoration: none;
     font-weight:700;
+}
+
+.anchor {
+    display: block;
+    height: 100px; /*same height as header*/
+    margin-top: -100px; /*same height as header*/
+    visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {
