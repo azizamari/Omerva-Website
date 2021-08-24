@@ -455,6 +455,10 @@ small a{
     .about > .content >p{
         font-size:1rem;
     }
+    .sign{
+        width:90px;
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 600px) {
     .about_text h5 {
@@ -491,6 +495,9 @@ small a{
     }
     .about{
         height:90vh;
+    }
+    .logo{
+        width:160px;
     }
 }
 @media screen and (max-width: 512px) {
