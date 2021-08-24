@@ -17,6 +17,11 @@
             </a>
         </span> -->
         <nav>
+            <span class="open-slide">
+                <a onclick="openSlideMenu()">
+                    <img src="assets/hamburger.svg" class="hamburger" alt="hamburger button" width="15"/>
+                </a>
+            </span>
             <a href="#">
                 <img src="assets/logo.png" class="logo" alt="immerva" />
             </a>
@@ -27,16 +32,16 @@
                 <li><a href="/#team">Our Team</a></li>
                 <li><a href="/#contact">Contact</a></li>
             </ul>
+            <button class="sign">Sign In</button>
         </nav>
-        <button class="sign">Sign In</button>
-        <!-- <div class="side-nav" id="side-menu">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#">Store</a>
-            <a href="#">Devices</a>
-            <a href="#">Community</a>
-            <a href="#">My Xbox</a>
-            <a href="#">Support</a>
-        </div> -->
+        <div class="side-nav" id="side-menu">
+            <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a class="side_links" href="/#about">Who We Are</a>
+            <a class="side_links" href="/#products">What We Build</a>
+            <a class="side_links" href="/#blog">Blog</a>
+            <a class="side_links" href="/#team">Our Team</a>
+            <a class="side_links" href="/#contact">Contact</a>
+        </div>
     </header>
     <section class="hero">
         <img src="assets/goggles.png" alt="">
@@ -47,7 +52,7 @@
     <section class="about">
         <h2 class="section__title">About Us</h2>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores, quo nisi iusto molestiae nulla accusantium quaerat minima consequuntur, officiis quibusdam nemo veritatis id? Similique ipsum cupiditate impedit repudiandae. Aliquid.</p>
+            <p><span class="bold_immerva">Immerva</span> is a software development company that utilizes immersive technologies.<br>At <span class="bold_immerva">Immerva</span> we build futuristic spatial computation technologies to augment the human experience and improve lives.</p>
             <img src="assets/3dcoor.png" alt="3d coordinates">
         </div>
     </section>
@@ -96,10 +101,10 @@
         <div class="main_about">
             <img src="assets/aziz.jpg" alt="Aziz Amari Picture" class="about_image">
             <div class="about_text">
-                <h5>Aziz Amari - Founder & CEO</h5>
+                <h5><a href="https://azizamari.github.io/" target="_blank">Aziz Amari - Founder & CEO</a></h5>
                 <p>
                     <!-- link Spatial computation to an article -->
-                    Aziz Amari is a passionate Technology Entrepreneur who's optimistic of the future of Spatial Computation with all it's fields like AR/ VR, Aritifical Intelligence, Mahine Learning, CV, 5G, IoT, Self-Driving vehicles,...<br>
+                    Aziz Amari is a passionate Technology Entrepreneur who's optimistic of the future of Spatial Computation and all it's fields like AR/ VR, Aritifical Intelligence, Machine Learning, CV, 5G, IoT, Self-Driving Systems,...<br>
                     Creator of <a href="http://ncodi.tn" target="_blank">Ncodi Language</a>
                 </p>
                 <div class="about_contact">
@@ -145,6 +150,9 @@
         </div>
     </footer>
     <small>&copy; Copyright 2021, <a href="/#">Immerva</a></small>
+
+
+    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/fart.min.js"></script>
     <script>

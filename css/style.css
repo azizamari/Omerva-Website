@@ -30,6 +30,14 @@ nav{
     display:flex;
     align-items:center;
     align-content: center;
+    width:100%;
+    justify-content: space-around;
+}
+.open-slide{
+    display: none;
+}
+nav > a{
+    display:flex;
 }
 .logo{
     cursor: pointer;
@@ -39,6 +47,13 @@ nav{
 .hamburger{
     width:60px;
     height: auto;
+    transition: all 0.3s ease 0s;
+    padding:3px;
+    border:3px solid #fff;
+}
+.hamburger:hover{
+    border:3px solid #FF0F33;
+    border-radius:50px;
 }
 .nav_links{
     font-weight:600;
@@ -78,7 +93,7 @@ nav{
     border: 3px solid #FF0F33;
     border-radius:0px;
 }
-/* 
+
 .side-nav{
     height: 100%;
     width: 0;
@@ -86,8 +101,7 @@ nav{
     z-index: 1;
     top:0;
     left:0;
-    background:rgba(255,255,255,0.03);
-    backdrop-filter: blur(16px);
+    background:#fff;
     overflow-x:hidden;
     padding-top:60px;
     border-top-right-radius: 18px;
@@ -95,15 +109,17 @@ nav{
 }
 
 .side-nav a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding:20px 10px 10px 40px;
     text-decoration: none;
     cursor: pointer;
     display: block;
+    font-weight: 600;
+    color:#1D1929;
     transition: all 0.3s ease 0s;
 }
 .side-nav a:hover{
-    color:#EF5477;
+    color:#FF0F33;
 }
 
 .side-nav .btn-close{
@@ -112,7 +128,16 @@ nav{
     right:22px;
     font-size:36px;
     margin-left: 50px;
-} */
+}
+.hamburger{
+    width:100%;
+    cursor: pointer;
+}
+.open-slide > a{
+    display:flex;
+}
+
+
 
 .hero{
     height: 80vh;
@@ -128,8 +153,11 @@ nav{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width:70vw;
-    padding-top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:80vw;
+    padding-top: 5rem;
 }
 
 .section__title{
@@ -144,7 +172,7 @@ nav{
 }
 
 .about{
-    height: 80vh;
+    height: 70vh;
     background:#F3F3F3;
 }
 
@@ -152,16 +180,21 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height:85%;
     margin: auto;
     width: 90%;
 }
 .about > .content >img{
-    width:25vw;
+    width:27vw;
 }
 .about > .content >p{
-    width:50%;
+    width:60%;
     color:#1D1929;
-    text-align:center;
+    font-size:1.4rem;
+    line-height:2;
+}
+.about > .content >p .bold_immerva{
+    font-weight: 600;
 }
 
 .blog{
@@ -198,6 +231,11 @@ nav{
 .blog_card > h4{
     padding-top:1rem;
     font-size:1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.blog_card > h4:hover{
+    color:#FF0F33;
 }
 .blog_card > p{
     font-size:0.9rem;
@@ -212,6 +250,10 @@ nav{
     text-decoration: inherit;
     color:#1D1929;
     font-weight:400;
+    transition: all 0.3s ease 0s;
+}
+.blog .more a:hover{
+    color:#FF0F33;
 }
 .blog .more a .bxs-right-arrow-circle{
     vertical-align:middle;
@@ -236,9 +278,7 @@ nav{
 .about_image {
     height: auto;
     width: 20rem;
-}
-.about_text{
-    width:550px;
+    padding-bottom: 2rem;
 }
 .main_about {
     width: 1130px;
@@ -256,6 +296,10 @@ nav{
     margin-bottom:25px;
     letter-spacing:2px;
 }
+.about_text h5 a{
+    text-decoration:none;
+    color:#FF0F33;
+}
 .about_text p{
     text-align:center;
     color:#1D1929;
@@ -263,6 +307,7 @@ nav{
     letter-spacing:1px;
     line-height:28px;
     margin-bottom: 45px;
+    padding: 0 1rem;
 }
 .about_contact{
     text-align:center;
@@ -287,7 +332,7 @@ nav{
     align-items: center;
 }
 .contact{
-    height: 35vh;
+    height: 30vh;
     background:#1D1929;
 }
 .contact .contact_content > img{
@@ -326,6 +371,91 @@ small a{
     visibility: hidden;
 }
 
+@media only screen and (max-width:1000px) {
+    .about_text p{
+        font-size:16px;
+        letter-spacing:initial;
+    }
+    .about_image {
+        height: auto;
+        width: 15rem;
+    }
+    .team{
+        height: 65vh;
+    }
+    .team > h4{
+        padding:2rem;
+        font-size:1rem;
+    }
+    .contact .contact_content > img{
+        width:15vw;
+        height:auto
+    }
+    .blog{
+        height:70vh;
+    }
+    .hero > img{
+        width:95vw;
+        padding-top:5vh;
+    }
+    .hero{
+        height:70vh;
+    }
+    .about > .content >img{
+        width:40vw;
+    }
+    .about > .content >p{
+        font-size:1.2rem;
+    }
+    .nav_links{
+        display:none;
+    }
+    .open-slide{
+        display: block;
+    }
+}
+@media only screen and (max-width:768px) {
+    .main_about{
+        flex-direction:column;
+    }
+    .about_image {
+        height: auto;
+        width: 14rem;
+    }
+    .team{
+        height: 100vh;
+    }
+    .contact_content{
+        flex-direction:column;
+    }
+    .contact{
+        height:55vh;
+        text-align: center;
+    }
+    .blog{
+        height:170vh;
+    }
+    .blog_cards{
+        flex-direction:column;
+    }
+    .blog_card{
+        width:50vw;
+        margin-bottom: 2rem;
+    }
+    .blog_card .image_container{
+        width:50vw;
+    }
+    .blog_card .blog_image{
+        width:50vw;
+    }
+    .hero{
+        height:55vh;
+        padding-top:5vh;
+    }
+    .about > .content >p{
+        font-size:1rem;
+    }
+}
 @media screen and (max-width: 600px) {
     .about_text h5 {
         font-size: 18px;
@@ -334,10 +464,45 @@ small a{
     .about_text p {
         font-size: 14px;
     }
+    .hero > img{
+        width:95vw;
+        padding-top:5vh;
+    }
+    .hero{
+        height:50vh;
+        padding-top:5vh;
+    }
+    .section__title{
+        font-size:2rem;
+        text-underline-offset:7px;
+    }
+    .blog{
+        height:160vh;
+    }
+    .about > .content{
+        flex-direction:column;
+        padding:2rem;
+    }
+    .about > .content>p{
+        width:90%;
+    }
+    .about > .content> img{
+        width:60vw;
+    }
+    .about{
+        height:90vh;
+    }
 }
-@media only screen and (max-width:768px) {
-    .about_image {
-        height: auto;
-        width: 14rem;
+@media screen and (max-width: 512px) {
+    .blog{
+        height:145vh;
+    }
+    .about > .content>p{
+        font-size:0.8rem;
+    }
+}
+@media screen and (max-width: 465px) {
+    .team{
+        height:115vh;
     }
 }
