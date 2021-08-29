@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express=require('express')
 const sequelize=require('./db/index')
 const Article=require('./db/models/article')
