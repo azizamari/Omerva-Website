@@ -18,3 +18,5 @@ for(const link of links){
         closeSlideMenu();
     })
 }
+
+AOS.init();

@@ -199,7 +199,7 @@ nav > a{
 
 .blog{
     height: 80vh;
-    background:#fff;
+    background:#F3F3F3;
 }
 .blog_cards{
     display: flex;
@@ -265,7 +265,7 @@ nav > a{
 
 .team{
     height: 80vh;
-    background:#F3F3F3;
+    background:#fff;
 }
 
 .team > h4{
@@ -370,6 +370,34 @@ small a{
     margin-top: -100px; /*same height as header*/
     visibility: hidden;
 }
+
+.products{
+    background:#fff;
+}
+
+.skills_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    width: 80%;
+    margin: auto;
+}
+.skills_list >*{
+    margin: 0.5rem 4rem;
+}
+
+.skill_card > h4{
+    font-size: 1.2rem;
+    text-align: center;
+    color:var(--white);
+    padding:10px;
+}
+.skill_card>img{
+    width:150px;
+    height:auto;
+}
+
 
 @media only screen and (max-width:1000px) {
     .about_text p{

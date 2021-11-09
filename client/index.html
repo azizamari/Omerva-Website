@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href ="assets/favicon2.ico" type = "image/x-icon">
     <title>Omerva</title>
@@ -16,7 +17,7 @@
                 <img src="assets/hamburger.svg" class="hamburger" alt="hamburger button"/>
             </a>
         </span> -->
-        <nav>
+        <nav data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="550">
             <span class="open-slide">
                 <a onclick="openSlideMenu()">
                     <img src="assets/hamburger.svg" class="hamburger" alt="hamburger button" width="15"/>
@@ -26,8 +27,8 @@
                 <img src="assets/logo.png" class="logo" alt="Omerva" />
             </a>
             <ul class="nav_links">
-                <li><a href="#about">Who We Are</a></li>
-                <li><a href="#">What We Build</a></li>
+                <li><a href="#about" >Who We Are</a></li>
+                <li><a href="#products">What We Build</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#team">Our Team</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -44,7 +45,7 @@
         </div>
     </header>
     <section class="hero">
-        <img src="assets/goggles.png" alt="">
+        <img src="assets/goggles.png" alt="" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800">
     </section>
 
 
@@ -53,19 +54,45 @@
         <h2 class="section__title">About Us</h2>
         <div class="content">
             <p><span class="bold_omerva">Omerva</span> is a software development company that utilizes immersive technologies.<br>At <span class="bold_omerva">Omerva</span> we build futuristic spatial computation technologies to augment the human experience and improve lives.</p>
-            <img src="assets/3dcoor.png" alt="3d coordinates">
+            <img src="assets/3dcoor.png" alt="3d coordinates" >
         </div>
     </section>
 
 
     <span class="anchor" id="products"></span>
     <section class="products">
-
+        <h2 class="section__title">What We Build</h2>
+        <div class="skills_list">
+            <div class="skill_card">
+                <img src="assets/int1.png" alt="VR logo">
+                <h4>Virtual Reality</h4>
+            </div>
+            <div class="skill_card">
+                <img src="assets/int2.png" alt="AR logo">
+                <h4>Augmented Reality</h4>
+            </div>
+            <div class="skill_card">
+                <img src="assets/int3.png" alt="3d graphics logo">
+                <h4>3D Graphics</h4>
+            </div>
+            <div class="skill_card">
+                <img src="assets/int4.png" alt="Web Dev logo">
+                <h4>Web Development</h4>
+            </div>
+            <div class="skill_card">
+                <img src="assets/int5.png" alt="Computer Vision logo">
+                <h4>Computer Vision</h4>
+            </div>
+            <div class="skill_card">
+                <img src="assets/int6.png" alt="AI logo">
+                <h4>Artificial Intelligence</h4>
+            </div>
+        </div>
     </section>
 
     <span class="anchor" id="blog"></span>
     <section class="blog">
-        <h2 class="section__title">Featured Posts</h2>
+        <h2 class="section__title" >Featured Posts</h2>
         <div class="blog_cards">
             <div class="blog_card">
                 <div class="image_container">
@@ -101,7 +128,7 @@
         <div class="main_about">
             <img src="assets/aziz.jpg" alt="Aziz Amari Picture" class="about_image">
             <div class="about_text">
-                <h5><a href="https://azizamari.github.io/" target="_blank">Aziz Amari - Founder & CEO</a></h5>
+                <h5><a href="https://azizamari.github.io/" target="_blank">Aziz Amari - Founder</a></h5>
                 <p>
                     <!-- link Spatial computation to an article -->
                     Aziz Amari is a passionate Technology Entrepreneur who's optimistic of the future of Spatial Computation and all it's fields like AR/ VR, Aritifical Intelligence, Machine Learning, CV, 5G, IoT, Self-Driving Systems,...<br>
@@ -150,8 +177,9 @@
         </div>
     </footer>
     <small>&copy; Copyright 2021, <a href="/#">Omerva</a></small>
-
-
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/fart.min.js"></script>
