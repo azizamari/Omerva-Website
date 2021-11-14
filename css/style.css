@@ -398,6 +398,20 @@ small a{
     width:150px;
     height:auto;
 }
+.products > h4{
+    text-align: center;
+    padding:2rem;
+    font-weight: 400;
+    color:#1D1929;
+    font-size:1.2rem;
+}
+.products > h3{
+    text-align: center;
+    padding:0.5rem;
+    font-weight: 600;
+    color:#1D1929;
+    font-size:1.7rem;
+}
 
 
 @media only screen and (max-width:1000px) {
@@ -506,7 +520,7 @@ small a{
         padding-top:5vh;
     }
     .section__title{
-        font-size:2rem;
+        font-size:1.7rem;
         text-underline-offset:7px;
     }
     .blog{
@@ -520,10 +534,10 @@ small a{
         width:90%;
     }
     .about > .content> img{
-        width:60vw;
+        width:40vw;
     }
     .about{
-        height:90vh;
+        height:65vh;
     }
     .logo{
         width:160px;
